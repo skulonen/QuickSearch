@@ -1,0 +1,1 @@
+A simple search Add-in for ArcGIS Pro. Opens by pressing Alt + F when a map view is open.

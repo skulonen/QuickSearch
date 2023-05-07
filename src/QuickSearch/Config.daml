@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ArcGIS defaultAssembly="QuickSearch.dll"
+        defaultNamespace="QuickSearch"
+        xmlns="http://schemas.esri.com/DADF/Registry"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://schemas.esri.com/DADF/Registry file:///C:/Program%20Files/ArcGIS/Pro/bin/ArcGIS.Desktop.Framework.xsd">
+
+  <AddInInfo id="{79cb12c1-c32b-4731-99ed-460ecd81885c}" version="1.0" desktopVersion="3.1.41833">
+    <Name>QuickSearch</Name>   
+    <Description>QuickSearch description</Description>
+    <Image>Images\AddinDesktop32.png</Image>
+    <Author>Sampo Kulonen</Author>
+    <Date>5/7/2023 3:30:40 AM</Date>
+    <Subject>Framework</Subject>
+  </AddInInfo>
+
+  <accelerators>
+    <insertAccelerator refID="QuickSearch_OpenSearch" key="F" flags="Alt" />
+  </accelerators>
+
+  <modules>
+    <insertModule id="QuickSearch_Module" className="QuickSearchModule" autoLoad="true" caption="QuickSearchModule">
+      <controls>
+        <button id="QuickSearch_OpenSearch" caption="Search" className="QuickSearch_Module:OpenSearch" keytip="S" />
+      </controls>
+    </insertModule>
+  </modules>
+</ArcGIS>
